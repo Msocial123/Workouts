@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+</head>
+<body>
+    <h1>College Admission Form</h1>
+    <form action="/submit" method="post">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br><br>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <!-- Contact Information Section -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+
+        <!-- Educational Background Section -->
+        <fieldset>
+            <legend>Educational Background</legend>
+            <label for="high-school">High School Name:</label>
+            <input type="text" id="high-school" name="high-school" required><br><br>
+            
+            <label for="high-school-gpa">High School GPA:</label>
+            <input type="number" id="high-school-gpa" name="high-school-gpa" step="0.01" required><br><br>
+            
+            <label for="sat-score">SAT Score:</label>
+            <input type="number" id="sat-score" name="sat-score"><br><br>
+            
+            <label for="act-score">ACT Score:</label>
+            <input type="number" id="act-score" name="act-score"><br><br>
+        </fieldset>
+
+        <!-- Course Preference Section -->
+        <fieldset>
+            <legend>Course Preference</legend>
+            <label for="course">Preferred Course:</label>
+            <select id="course" name="course" required>
+                <option value="computer-science">Computer Science</option>
+                <option value="business">Business</option>
+                <option value="engineering">Engineering</option>
+                <option value="arts">Arts</option>
+                <option value="science">Science</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Declaration Section -->
+        <fieldset>
+            <legend>Declaration</legend>
+            <label>
+                <input type="checkbox" name="declaration" required>
+                I declare that the information provided is true and correct to the best of my knowledge.
+            </label><br><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

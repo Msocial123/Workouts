@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        div + div {
+            margin-top: 1em;
+        }
+        label {
+            display: block;
+            margin-bottom: .5em;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: .5em;
+            border: 1px solid #ccc;
+            border-radius: .5em;
+        }
+        button {
+            padding: 0.7em;
+            border: none;
+            border-radius: .5em;
+            background-color: #007BFF;
+            color: white;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <center><h2>Contact Form</h2></center>
+    <form action="/submit-form" method="post">
+        
+        <div>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name"><br>
+        </div>
+        <br>
+        <div>
+            <label for="Qualification">Qualification:</label>
+            <select id="Qualification" name="Qualification">
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MSC">MSC</option>
+            </select><br>
+        </div>
+        <br>
+        <div>
+            <label for = "Exp">Experience:</label>
+            <select id="Exp" name="Experience">
+                <option value="v1">0-1 years</option>
+                <option value="v2">2-4 years</option>
+                <option value="v3">More than 4 years</option>
+                <option value="v4">No Experience</option>
+            </select><br>
+        </div>
+        <div>
+            <label for = "Exp">Experience:</label>
+            <select id="Exp" name="Experience">
+                <option value="v1">0-1 years</option>
+                <option value="v2">2-4 years</option>
+                <option value="v3">More than 4 years</option>
+                <option value="v4">No Experience</option>
+            </select><br>
+        </div>
+        
+    </form>
+</body>
+</html>
