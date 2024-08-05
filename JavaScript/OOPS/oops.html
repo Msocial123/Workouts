@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Info</title>
+</head>
+<body>
+    <h1>Car Information</h1>
+    <div id="carInfo"></div>
+
+    <script>
+        // JavaScript code using OOP concepts
+        class Car {
+            constructor(make, model, year) {
+                this.make = make;
+                this.model = model;
+                this.year = year;
+            }
+
+            displayInfo() {
+                return `${this.year} ${this.make} ${this.model}`;
+            }
+        }
+
+        // Create an array of cars
+        let cars = [
+            new Car('Toyota', 'Corolla', 2021),
+            new Car('Honda', 'Civic', 2020),
+            new Car('Ford', 'Mustang', 2022)
+        ];
+
+        // Display car information on the web page
+        let carInfoDiv = document.getElementById('carInfo');
+        cars.forEach(car => {
+            let p = document.createElement('p');
+            p.textContent = car.displayInfo();
+            carInfoDiv.appendChild(p);
+        });
+    </script>
+</body>
+</html>
